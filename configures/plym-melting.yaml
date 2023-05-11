@@ -1,0 +1,25 @@
+dataset: plym-melting
+
+# model
+num_layer: 2
+emb_dim: 600
+norm_layer: instance_size
+readout: max
+drop_ratio: 0
+
+# learning
+lr: 0.008
+wdecay: 0
+
+# diffusion-based augmentation
+n_negative: 10
+out_steps: 10
+topk: 1000
+aug_batch: 2500
+start: 40
+iteration: 20
+strategy: add_once
+snr: 0.2
+scale_eps: 0.2
+
+no_print: True

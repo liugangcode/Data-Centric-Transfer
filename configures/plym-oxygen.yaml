@@ -1,0 +1,25 @@
+dataset: plym-oxygen
+
+# model
+emb_dim: 1200
+norm_layer: instance_norm
+initw_name: kaiming
+drop_ratio: 0
+
+# learning
+lr: 0.008
+patience: 300
+
+# diffusion-based augmentation
+n_negative: 1
+out_steps: 3
+topk: 50
+aug_batch: 1000
+start: 40
+iteration: 10
+strategy: add_once
+snr: 0.67
+scale_eps: 0
+perturb_ratio: 0.01
+
+no_print: True

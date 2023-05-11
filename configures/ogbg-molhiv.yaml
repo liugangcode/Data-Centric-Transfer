@@ -1,0 +1,24 @@
+dataset: ogbg-molhiv
+
+# model
+num_layer: 2
+emb_dim: 64
+initw_name: kaiming
+drop_ratio: 0.8
+
+#learning
+epochs: 80
+
+# diffusion-based augmentation
+n_negative: 10
+out_steps: 2
+topk: 15
+aug_batch: 3000
+start: 10
+iteration: 5
+strategy: add_accumulate
+snr: 0.5
+scale_eps: 0.
+perturb_ratio: 1
+
+no_print: True

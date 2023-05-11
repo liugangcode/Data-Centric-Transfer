@@ -1,0 +1,25 @@
+dataset: ogbg-molclintox
+
+# model
+model: gin
+readout: max
+
+# learning
+lr: 0.1
+wdecay: 0.05
+batch_size: 2048
+patience: 300
+
+# diffusion-based augmentation
+n_negative: 4
+out_steps: 1
+topk: 100
+aug_batch: 2000
+start: 20
+iteration: 5
+strategy: replace_once
+snr: 1
+scale_eps: 0.1
+perturb_ratio: 0.4
+
+no_print: True

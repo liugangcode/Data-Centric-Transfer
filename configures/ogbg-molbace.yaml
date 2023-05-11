@@ -1,0 +1,27 @@
+dataset: ogbg-molbace
+
+# model
+model: gin
+num_layer: 3
+readout: max
+norm_layer: size_norm
+
+# learning
+lr: 0.0001
+wdecay: 0.0001
+batch_size: 2048
+patience: 300
+
+# diffusion-based augmentation
+n_negative: 5
+out_steps: 5
+topk: 100
+aug_batch: 2000
+start: 20
+iteration: 20
+strategy: replace_accumulate
+snr: 1
+scale_eps: 0.
+perturb_ratio: 0.02
+
+no_print: True

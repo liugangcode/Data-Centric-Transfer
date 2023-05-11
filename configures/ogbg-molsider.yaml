@@ -1,0 +1,25 @@
+dataset: ogbg-molsider
+
+# model
+model: gin
+num_layer: 3
+
+# learning
+lr: 0.0002
+batch_size: 2048
+patience: 300
+
+# diffusion-based augmentation
+n_negative: 1
+out_steps: 1
+topk: 25
+aug_batch: 2000
+start: 50
+iteration: 10
+strategy: replace_once
+snr: 1
+scale_eps: 0
+perturb_ratio: 0.2
+
+no_print: True
+

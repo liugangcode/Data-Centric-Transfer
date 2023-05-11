@@ -1,0 +1,23 @@
+dataset: ogbg-molfreesolv
+
+# model
+drop_ratio: 0
+
+# learning
+lr: 0.001
+wdecay: 0.01
+batch_size: 256
+
+# diffusion-based augmentation
+n_negative: 1
+out_steps: 1
+topk: 1
+aug_batch: 1000
+start: 5
+iteration: 5
+strategy: replace_accumulate
+snr: 1
+scale_eps: 0
+perturb_ratio: 0.2
+
+no_print: True
