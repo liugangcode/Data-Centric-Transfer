@@ -1,0 +1,26 @@
+dataset: ogbg-moltoxcast
+
+# model
+model: gin
+norm_layer: size_norm
+initw_name: kaiming
+drop_ratio: 0
+
+# learning
+wdecay: 0
+patience: 100
+epochs: 150
+
+# diffusion-based augmentation
+n_negative: 200
+out_steps: 1
+topk: 10
+aug_batch: 1000
+start: 10
+iteration: 10
+strategy: replace_accumulate
+snr: 1
+scale_eps: 0
+perturb_ratio: 0.1
+
+no_print: True

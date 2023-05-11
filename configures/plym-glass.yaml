@@ -1,0 +1,24 @@
+dataset: plym-glass
+
+# model
+num_layer: 2
+readout: max
+drop_ratio: 0
+
+# learning
+lr: 0.001
+epochs: 400
+
+# diffusion-based augmentation
+n_negative: 1
+out_steps: 1
+topk: 200
+aug_batch: 5000
+start: 50
+iteration: 10
+strategy: add_accumulate
+snr: 0.01
+scale_eps: 0
+perturb_ratio: 0.1
+
+no_print: True

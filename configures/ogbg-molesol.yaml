@@ -1,0 +1,23 @@
+dataset: ogbg-molesol
+
+# model
+emb_dim: 128
+initw_name: kaiming
+
+# learning
+lr: 0.02
+batch_size: 64
+
+# diffusion-based augmentation
+n_negative: 1
+out_steps: 10
+topk: 50
+aug_batch: 1000
+start: 50
+iteration: 10
+strategy: replace_once
+snr: 0.1
+scale_eps: 0.05
+perturb_ratio: 0.02
+
+no_print: True

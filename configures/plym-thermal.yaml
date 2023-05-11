@@ -1,0 +1,28 @@
+dataset: plym-thermal
+
+# model
+model: gin
+emb_dim: 64
+num_layer: 6
+readout: mean
+initw_name: orthogonal
+drop_ratio: 0
+
+# learning
+lr: 0.0005
+batch_size: 32
+patience: 100
+
+# diffusion-based augmentation
+n_negative: 1
+out_steps: 1
+topk: 20
+aug_batch: 1000
+start: 100
+iteration: 5
+strategy: add_once
+snr: 0.5
+scale_eps: 0
+perturb_ratio: 0.1
+
+no_print: True
