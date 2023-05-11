@@ -56,10 +56,8 @@ def get_args():
                         help='epoch to do augmentation')
     parser.add_argument('--strategy', default="replace_accumulate", type=str,
                         choices=['replace_once', 'add_once', 'replace_accumulate', 'add_accumulate'],
-                        help='strategy about how to use the augmented examples. \
-                                Replace or add to the original examples; \
-                                Accumulate the augmented examples or not')
-
+                        help='  strategy about how to use the augmented examples. \
+                                Replace or add to the original examples; Accumulate the augmented examples or not')
     parser.add_argument('--n-jobs', type=int, default=22,
                         help='# process to convert the dense adj input to pyg input form')
     parser.add_argument('--n-negative', type=int, default=5,
