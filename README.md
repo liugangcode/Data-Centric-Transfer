@@ -1,7 +1,7 @@
 Data-Centric Learning from Unlabeled Graphs with Diffusion Model
 ================================================================
 
-This is the code for DCT, a data-centric transfer learning framework with diffusion model on graphs. This data-centric approach avoids the inappropriate designs of hand-crafted self-supervised tasks and transfer knowledge by data augmentation. Please refer to our paper: https://arxiv.org/abs/2303.10108 for more details.
+This is the code for DCT, a data-centric transfer learning framework with diffusion model on graphs. This data-centric approach avoids the inappropriate designs of hand-crafted self-supervised tasks and transfer knowledge by data augmentation. Please refer to our paper (accepted by NeurIPS 2023): https://arxiv.org/abs/2303.10108 for more details.
 
 ![parameter centric versus data centric](figures/thumbnail.png "Parameter-Centric vs. Data-Centric")
 
