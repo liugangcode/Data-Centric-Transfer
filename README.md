@@ -27,7 +27,7 @@ Following is an example command to run experiments on molecules' and polymers' c
 python main.py --dataset ogbg-molsider
 ```
 
-The dataset name can be any of `['plym-density', 'plym-oxygen','plym-melting', 'plym-glass', 'plym-thermal', 'ogbg-mollipo', 'ogbg-molfreesolv', 'ogbg-molesol', 'ogbg-molhiv', 'ogbg-molbace', 'ogbg-molbbbp', 'ogbg-molclintox','ogbg-molsider','ogbg-moltox21','ogbg-moltoxcast']`
+The dataset name can be any of `['plym-density', 'plym-oxygen','plym-melting', 'plym-glass', 'ogbg-mollipo', 'ogbg-molfreesolv', 'ogbg-molesol', 'ogbg-molhiv', 'ogbg-molbace', 'ogbg-molbbbp', 'ogbg-molclintox','ogbg-molsider','ogbg-moltox21','ogbg-moltoxcast']`
 
 We use `n_jobs=22` by default to covnert the generated molecules to the PyG-style data objectives with 22 processes. Please adjust this hyper-parameter in accordance with the available CPU cores.
 
