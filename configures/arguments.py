@@ -14,13 +14,11 @@ def get_args():
                         help='number of workers for data loader')
     parser.add_argument('--no-print', action='store_true', default=False,
                         help="don't use progress bar")
-
     parser.add_argument('--dataset', default="ogbg-molsider", type=str,
-                        choices=['plym-density', 'plym-oxygen', 'plym-melting', 'plym-glass', 'plym-thermal',
+                        choices=['plym-density', 'plym-oxygen', 'plym-melting', 'plym-glass',
                                 'ogbg-mollipo', 'ogbg-molfreesolv', 'ogbg-molesol', 
                                 'ogbg-molhiv', 'ogbg-molbace', 'ogbg-molbbbp', 'ogbg-molclintox','ogbg-molsider','ogbg-moltox21','ogbg-moltoxcast'],
                         help='dataset name (plym-, ogbg-)')
-    
     # model
     parser.add_argument('--model', type=str, default='gin-virtual',
                         help='GNN gin, gin-virtual, or gcn, or gcn-virtual (default: gin-virtual)')
